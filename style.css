@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+:root{
+    --cor-primaria: #E9336D;
+    --cor-secundaria: #FD9B11;
+    --cor-terciaria: #E9F5FF;
+    --cor-quaternaria: #5C697C;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.cabecalho{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-quaternaria);
+}
+.cabecalho__div{
+    height: 10%;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+}
+.cabecalho__imagem{
+    height: 60%;
+    width: 3%;
+}
+.apresentacao{
+    height: 80vh;
+    background-color: var(--cor-quaternaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.apresentacao__div{
+    height: 80%;
+    background-color: #efd5b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    text-align: justify;
+
+}
+p{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.apresentacao__caixa{
+    background-color: var(--cor-terciaria);
+    height: 50%;
+    width: 12%;
+}
+.rodape{
+    height: 10%;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape__div{
+    background-color: #FD9B11;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.botao{
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+    border: none;
+    background-color: #efd5b0;
+    border-radius: 15px;
+    padding: 5px 5px;
+}
+.rodape__texto{
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+}
+.botao:hover{
+    background-color: var(--cor-terciaria);
+    cursor: pointer;
+}
+@media (max-width: 414px){
+    body{
+        height: 150vh;
+    }
+    .cabecalho__imagem{
+        width: 15%;
+        height: 50%;
+    }
+    .apresentacao{
+        flex-direction: column;
+        height: 120%;
+    }
+    .apresentacao__caixa{
+        width: 70%;
+        height: 70%;
+        margin-bottom: 30px;
+
+    }
+    .rodape{
+        height: 5%;
+    }
+}
